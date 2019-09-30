@@ -4,13 +4,13 @@ public class Customer{
     private static int maxId = 0;
     private int id;
     private String name;
-    private double cashOnHand;
+    private double cash;
 
-    public Customer(String name, double cashOnHand){
+    public Customer(String name, double cash){
         maxId++;
         id = maxId;
         this.name = name;
-        this.cashOnHand = cashOnHand;
+        this.cash = cash;
     } 
 
     public int getId(){
@@ -25,19 +25,19 @@ public class Customer{
         this.name = name;
     }
 
-    public double getCashOnHand() {
-        return cashOnHand;
+    public double getCash() {
+        return cash;
     }
 
-    public void setCashOnHand(double cashOnHand){
-        this.cashOnHand = cashOnHand;
+    public void setCash(double cash){
+        this.cash = cash;
     }
 
-    public void addCash(double cash){
-        cashOnHand += cash;
+    public void addMoney(double money){
+        cash += money;
     }
 
     public void pay(double price){
-        cashOnHand -= price;
+        cash -= price;
     }
 }
