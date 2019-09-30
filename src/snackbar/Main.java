@@ -87,5 +87,11 @@ public class Main {
         System.out.println(pretzel.getName() + " quantity: " + pretzel.getQuantity());
         System.out.println();
 
+        System.out.println("***Stretch***");
+        System.out.println("There are " + chips.getQuantity() + " " + chips.getName() + " at the " + foodMachine.getName() + " vending machine. Total Cost: $" + (chips.getCost() * chips.getQuantity()));
+        System.out.println("There are " + chocolate.getQuantity() + " " + chocolate.getName() + " at the " + foodMachine.getName() + " vending machine. Total Cost: $" + (chocolate.getCost() * chocolate.getQuantity()));
+        System.out.println("There are " + pretzel.getQuantity() + " " + pretzel.getName() + " at the " + foodMachine.getName() + " vending machine. Total Cost: $" + (pretzel.getCost() * pretzel.getQuantity()));
+        System.out.println("There are " + soda.getQuantity() + " " + soda.getName() + " at the " + drinkMachine.getName() + " vending machine. Total Cost: $" + (soda.getCost() * soda.getQuantity()));
+        System.out.println("There are " + water.getQuantity() + " " + water.getName() + " at the " + drinkMachine.getName() + " vending machine. Total Cost: $" + (water.getCost() * water.getQuantity()));
     }
 }
